@@ -1,15 +1,30 @@
-.bianco{
-    color: white;
+/* REGOLE GENERALI */
+:root{
+--my-dark-color: #3A546D;
+--my-darkest-color: #2C3E50;
+--my-light-color: #1ABC9C;
 }
 
-.bg-bianco{
-    background-color: white;
+body{
+    
 }
 
-.light-dark{
-    background-color: #2C3E50;
+.bg-my-dark{
+    background-color: var(--my-dark-color);
 }
 
-.debug-color{
-    background-color: #1ABC9C;
+.bg-my-darkest{
+    background-color: var(--my-darkest-color);
+}
+
+.bg-my-light{
+    background-color: var(--my-light-color);
+}
+
+.text-my-light{
+    color: var(--my-light-color);
+}
+
+img{
+    width: 100%;
 }
