@@ -6,7 +6,7 @@
 }
 
 body{
-    
+    font-family: 'Poppins', sans-serif;
 }
 
 .bg-my-dark{
@@ -27,4 +27,62 @@ body{
 
 img{
     width: 100%;
+}
+
+.avatar-img{
+    max-width: 300px;
+}
+
+button{
+    width: 200px;
+    background-color: var(--my-light-color);
+    color: white;
+    border: 1px white solid;
+}
+
+.inverted-hamburger{
+    filter: invert(1);
+
+}
+
+.main-title{
+
+}
+
+.decorative-element-container::before,
+.decorative-element-container::after{
+    content: "";
+    width: 12%;
+    height: 4px;
+    border-radius: 2px;
+    border-color: white;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.decorative-element-container.dark-dashes::before,
+.decorative-element-container.dark-dashes::after{
+    border-color: var(--my-darkest-color);
+}
+
+.decorative-element-container.dark-dashes > i{
+    color: var(--my-darkest-color);
+}
+
+.decorative-element-container > i{
+    vertical-align: middle;
+    margin: 0 15px;
+}
+
+
+
+
+
+
+
+/* media query */
+@media screen and (min-width: 768px){
+    .main-title{
+        font-size: 4rem;
+    }
 }
